@@ -90,6 +90,7 @@ Partial Class SoftKey
         Me.Button00 = New SoftKeyboard.ButtonEx()
         Me.ButtonSpace = New SoftKeyboard.ButtonEx()
         Me.ButtonClose = New SoftKeyboard.ButtonEx()
+        Me.ButtonKanji = New SoftKeyboard.ButtonEx()
         Me.ButtonEnter = New SoftKeyboard.ButtonEx()
         Me.ButtonDel = New SoftKeyboard.ButtonEx()
         Me.ButtonBS = New SoftKeyboard.ButtonEx()
@@ -1201,6 +1202,22 @@ Partial Class SoftKey
         Me.ButtonClose.Text = "終了"
         Me.ButtonClose.UseVisualStyleBackColor = False
         '
+        'ButtonKanji
+        '
+        Me.ButtonKanji.BackColor = System.Drawing.Color.White
+        Me.ButtonKanji.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.ButtonKanji.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow
+        Me.ButtonKanji.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonKanji.Font = New System.Drawing.Font("メイリオ", 21.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.ButtonKanji.ForeColor = System.Drawing.Color.Black
+        Me.ButtonKanji.Location = New System.Drawing.Point(725, 56)
+        Me.ButtonKanji.Name = "ButtonKanji"
+        Me.ButtonKanji.Size = New System.Drawing.Size(202, 54)
+        Me.ButtonKanji.TabIndex = 92
+        Me.ButtonKanji.Tag = "19"
+        Me.ButtonKanji.Text = "半角/全角"
+        Me.ButtonKanji.UseVisualStyleBackColor = False
+        '
         'ButtonEnter
         '
         Me.ButtonEnter.BackColor = System.Drawing.Color.White
@@ -1548,6 +1565,7 @@ Partial Class SoftKey
         Me.Controls.Add(Me.Button00)
         Me.Controls.Add(Me.ButtonSpace)
         Me.Controls.Add(Me.ButtonClose)
+        Me.Controls.Add(Me.ButtonKanji)
         Me.Controls.Add(Me.ButtonEnter)
         Me.Controls.Add(Me.ButtonDel)
         Me.Controls.Add(Me.ButtonBS)
@@ -1582,6 +1600,7 @@ Partial Class SoftKey
     End Sub
     Friend WithEvents ButtonSpace As ButtonEx
     Friend WithEvents ButtonClose As ButtonEx
+    Friend WithEvents ButtonKanji As ButtonEx
     Friend WithEvents ButtonLeft As ButtonEx
     Friend WithEvents ButtonUp As ButtonEx
     Friend WithEvents ButtonDown As ButtonEx

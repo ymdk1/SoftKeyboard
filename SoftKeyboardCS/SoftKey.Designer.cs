@@ -96,6 +96,7 @@
             this.Button00 = new SoftKeyboard.ButtonEx();
             this.ButtonSpace = new SoftKeyboard.ButtonEx();
             this.ButtonClose = new SoftKeyboard.ButtonEx();
+            this.ButtonKanji = new SoftKeyboard.ButtonEx();
             this.ButtonEnter = new SoftKeyboard.ButtonEx();
             this.ButtonDel = new SoftKeyboard.ButtonEx();
             this.ButtonBS = new SoftKeyboard.ButtonEx();
@@ -1275,6 +1276,23 @@
             this.ButtonClose.UseVisualStyleBackColor = false;
             this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
+            // ButtonKanji
+            // 
+            this.ButtonKanji.BackColor = System.Drawing.Color.White;
+            this.ButtonKanji.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ButtonKanji.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.ButtonKanji.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonKanji.Font = new System.Drawing.Font("メイリオ", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ButtonKanji.ForeColor = System.Drawing.Color.Black;
+            this.ButtonKanji.Location = new System.Drawing.Point(725, 56);
+            this.ButtonKanji.Name = "ButtonKanji";
+            this.ButtonKanji.Size = new System.Drawing.Size(198, 50);
+            this.ButtonKanji.TabIndex = 97;
+            this.ButtonKanji.Tag = "19";
+            this.ButtonKanji.Text = "半角/全角";
+            this.ButtonKanji.UseVisualStyleBackColor = false;
+            this.ButtonKanji.Click += new System.EventHandler(this.ButtonExtendKeyCode_Click);
+            // 
             // ButtonEnter
             // 
             this.ButtonEnter.BackColor = System.Drawing.Color.White;
@@ -1285,7 +1303,7 @@
             this.ButtonEnter.ForeColor = System.Drawing.Color.Black;
             this.ButtonEnter.Location = new System.Drawing.Point(729, 361);
             this.ButtonEnter.Name = "ButtonEnter";
-            this.ButtonEnter.Size = new System.Drawing.Size(198, 50);
+            this.ButtonEnter.Size = new System.Drawing.Size(202, 54);
             this.ButtonEnter.TabIndex = 97;
             this.ButtonEnter.Tag = "0D";
             this.ButtonEnter.Text = "ENTER";
@@ -1634,6 +1652,7 @@
             this.Controls.Add(this.Button00);
             this.Controls.Add(this.ButtonSpace);
             this.Controls.Add(this.ButtonClose);
+            this.Controls.Add(this.ButtonKanji);
             this.Controls.Add(this.ButtonEnter);
             this.Controls.Add(this.ButtonDel);
             this.Controls.Add(this.ButtonBS);
@@ -1741,6 +1760,7 @@
         internal ButtonEx Button00;
         internal ButtonEx ButtonSpace;
         internal ButtonEx ButtonClose;
+        internal ButtonEx ButtonKanji;
         internal ButtonEx ButtonEnter;
         internal ButtonEx ButtonDel;
         internal ButtonEx ButtonBS;

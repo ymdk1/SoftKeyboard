@@ -257,7 +257,7 @@ Public Class SoftKey
     End Sub
 
     ' 拡張キーコードソフトキークリック
-    Private Sub ButtonExtendKeyCode_Click(sender As System.Object, e As System.EventArgs) Handles ButtonUp.Click, ButtonRight.Click, ButtonLeft.Click, ButtonEnter.Click, ButtonDown.Click, ButtonDel.Click, ButtonBS.Click, ButtonSpace.Click
+    Private Sub ButtonExtendKeyCode_Click(sender As System.Object, e As System.EventArgs) Handles ButtonUp.Click, ButtonRight.Click, ButtonLeft.Click, ButtonEnter.Click, ButtonDown.Click, ButtonDel.Click, ButtonBS.Click, ButtonSpace.Click, ButtonKanji.Click
         ' 拡張キーボード入力送信
         NativeMethods.SendInputKeybordExtend(UShort.Parse(DirectCast(sender, ButtonEx).Tag.ToString, System.Globalization.NumberStyles.HexNumber))
     End Sub
